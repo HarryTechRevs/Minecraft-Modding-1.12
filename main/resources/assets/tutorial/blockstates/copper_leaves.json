@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+         "check_decay=true,decayable=true": { "model": "tutorial:copper_leaves" },
+        "check_decay=true,decayable=false": { "model": "tutorial:copper_leaves" },
+        "check_decay=false,decayable=true": { "model": "tutorial:copper_leaves" },
+        "check_decay=false,decayable=false": { "model": "tutorial:copper_leaves" }
+    }
+}

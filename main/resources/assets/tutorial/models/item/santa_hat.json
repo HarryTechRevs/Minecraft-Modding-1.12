@@ -1,0 +1,11 @@
+{
+    "parent": "tutorial:block/santa_hat",
+    "display":
+    {
+        "firstperson_righthand":
+        {
+            "translation": [0, 5, 0],
+            "scale": [1.25, 1.25, 1.25]
+        }
+    }
+}

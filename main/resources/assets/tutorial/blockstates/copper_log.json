@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "axis=y":  { "model": "tutorial:copper_log" },
+        "axis=z":   { "model": "tutorial:copper_log", "x": 90 },
+        "axis=x":   { "model": "tutorial:copper_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "tutorial:copper_bark" }
+    }
+}

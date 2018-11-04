@@ -1,0 +1,48 @@
+//Items
+item.copper_ingot.name=Copper Ingot
+
+//Armour
+item.custom_helmet.name=Custom Model Helmet
+item.custom_chestplate.name=Custom Model Chestplate
+item.custom_leggings.name=Custom Model Leggings
+item.custom_boots.name=Custom Model Boots
+
+//Tools
+item.copper_axe.name=Copper Axe
+item.copper_hoe.name=Copper Hoe
+item.copper_pickaxe.name=Copper Pickaxe
+item.copper_shovel.name=Copper Shovel
+item.copper_sword.name=Copper Sword
+
+//Blocks
+tile.aluminium_leaves.name=Aluminium Leaves
+tile.aluminium_log.name=Aluminium Log
+tile.aluminium_sapling.name=Aluminium Sapling
+tile.copper_block.name=Copper Block
+tile.copper_dirt.name=Copper Dirt
+tile.copper_leaves.name=Copper Leaves
+tile.copper_log.name=Copper Log
+tile.copper_ore.name=Copper Ore
+tile.copper_planks.name=Copper Planks
+tile.copper_sapling.name=Copper Sapling
+tile.copper_chest.name=Copper Chest
+tile.santa_hat.name=Santa Hat
+
+//Machines
+tile.sintering_furnace.name=Sinterer
+tile.electric_sintering_furnace.name=Electric Sinterer
+tile.glowstone_generator.name=Glowstone Generator
+tile.energy_storage.name=Energy Storage
+
+//Containers
+container.copper_chest=Copper Chest
+container.sintering_furnace=Sinterer
+container.electric_sintering_furnace=Electric Sinterer
+container.glowstone_generator=Glowstone Generator
+container.energy_storage=Energy Storage
+
+//Creative Tabs
+itemGroup.tutorial=Tutorial Tab
+
+//Fluids
+fluid.molten_copper=Molten Copper

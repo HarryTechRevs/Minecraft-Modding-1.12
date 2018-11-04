@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "normal":
+        {
+            "model": "tutorial:copper_block"
+        }
+    }
+}

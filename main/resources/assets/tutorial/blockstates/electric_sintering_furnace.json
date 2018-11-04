@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "burning=false,facing=north": { "model": "tutorial:electric_sintering_furnace" },
+        "burning=false,facing=east": { "model": "tutorial:electric_sintering_furnace", "y": 90 },
+        "burning=false,facing=south": { "model": "tutorial:electric_sintering_furnace", "y": 180 },
+        "burning=false,facing=west": { "model": "tutorial:electric_sintering_furnace", "y": 270 },
+        "burning=true,facing=north": { "model": "tutorial:lit_electric_sintering_furnace" },
+        "burning=true,facing=east": { "model": "tutorial:lit_electric_sintering_furnace", "y": 90 },
+        "burning=true,facing=south": { "model": "tutorial:lit_electric_sintering_furnace", "y": 180 },
+        "burning=true,facing=west": { "model": "tutorial:lit_electric_sintering_furnace", "y":270  }
+    }
+}
