@@ -8,6 +8,7 @@ import harry.mods.tutorial.blocks.Block3DModelBase;
 import harry.mods.tutorial.blocks.BlockBase;
 import harry.mods.tutorial.blocks.BlockCopperChest;
 import harry.mods.tutorial.blocks.BlockDirtBase;
+import harry.mods.tutorial.blocks.BlockDoorBase;
 import harry.mods.tutorial.blocks.BlockElectricSinteringFurnace;
 import harry.mods.tutorial.blocks.BlockEnergyStorage;
 import harry.mods.tutorial.blocks.BlockFluid;
@@ -18,6 +19,7 @@ import harry.mods.tutorial.blocks.BlockSaplingBase;
 import harry.mods.tutorial.blocks.BlockSinteringFurnace;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockInit 
 {	
@@ -31,6 +33,7 @@ public class BlockInit
 	public static final Block COPPER_ORE = new BlockBase("copper_ore", Material.ROCK, Main.TUTORIAL);
 	public static final Block COPPER_PLANKS = new BlockBase("copper_planks", Material.WOOD, Main.TUTORIAL);
 	public static final Block COPPER_SAPLING = new BlockSaplingBase("copper_sapling");
+	public static final Block COPPER_DOOR = new BlockDoorBase("copper_door", Material.ANVIL, Main.TUTORIAL);
 	
 	//Aluminium
 	public static final Block ALUMINIUM_LEAVES = new BlockLeavesBase("aluminium_leaves");
