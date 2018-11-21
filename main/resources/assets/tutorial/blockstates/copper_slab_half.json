@@ -1,0 +1,7 @@
+{
+    "variants":
+    {
+        "half=bottom,variant=default": { "model": "tutorial:copper_slab_bottom" },
+        "half=top,variant=default": { "model": "tutorial:copper_slab_top" }
+    }
+}

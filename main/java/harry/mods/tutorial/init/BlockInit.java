@@ -7,19 +7,21 @@ import harry.mods.tutorial.Main;
 import harry.mods.tutorial.blocks.Block3DModelBase;
 import harry.mods.tutorial.blocks.BlockBase;
 import harry.mods.tutorial.blocks.BlockCopperChest;
-import harry.mods.tutorial.blocks.BlockDirtBase;
 import harry.mods.tutorial.blocks.BlockDoorBase;
-import harry.mods.tutorial.blocks.BlockElectricSinteringFurnace;
-import harry.mods.tutorial.blocks.BlockEnergyStorage;
 import harry.mods.tutorial.blocks.BlockFluid;
-import harry.mods.tutorial.blocks.BlockGlowstoneGenerator;
-import harry.mods.tutorial.blocks.BlockLeavesBase;
-import harry.mods.tutorial.blocks.BlockLogBase;
-import harry.mods.tutorial.blocks.BlockSaplingBase;
-import harry.mods.tutorial.blocks.BlockSinteringFurnace;
+import harry.mods.tutorial.blocks.machines.BlockElectricSinteringFurnace;
+import harry.mods.tutorial.blocks.machines.BlockEnergyStorage;
+import harry.mods.tutorial.blocks.machines.BlockGlowstoneGenerator;
+import harry.mods.tutorial.blocks.machines.BlockSinteringFurnace;
+import harry.mods.tutorial.blocks.slabs.BlockSlabDoubleBase;
+import harry.mods.tutorial.blocks.slabs.BlockSlabHalfBase;
+import harry.mods.tutorial.blocks.trees.BlockDirtBase;
+import harry.mods.tutorial.blocks.trees.BlockLeavesBase;
+import harry.mods.tutorial.blocks.trees.BlockLogBase;
+import harry.mods.tutorial.blocks.trees.BlockSaplingBase;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockInit 
 {	
@@ -34,6 +36,8 @@ public class BlockInit
 	public static final Block COPPER_PLANKS = new BlockBase("copper_planks", Material.WOOD, Main.TUTORIAL);
 	public static final Block COPPER_SAPLING = new BlockSaplingBase("copper_sapling");
 	public static final Block COPPER_DOOR = new BlockDoorBase("copper_door", Material.ANVIL, Main.TUTORIAL);
+	public static final BlockSlab COPPER_SLAB_DOUBLE = new BlockSlabDoubleBase("copper_slab_double", Material.IRON, Main.TUTORIAL, BlockInit.COPPER_SLAB_HALF);
+	public static final BlockSlab COPPER_SLAB_HALF = new BlockSlabHalfBase("copper_slab_half", Material.IRON, Main.TUTORIAL, BlockInit.COPPER_SLAB_HALF, BlockInit.COPPER_SLAB_DOUBLE);
 	
 	//Aluminium
 	public static final Block ALUMINIUM_LEAVES = new BlockLeavesBase("aluminium_leaves");
@@ -50,6 +54,6 @@ public class BlockInit
 	public static final Block GLOWSTONE_GENERATOR = new BlockGlowstoneGenerator("glowstone_generator");
 	public static final Block ENERGY_STORAGE = new BlockEnergyStorage("energy_storage");
 	
-	//Fluids
-	public static final Block MOLTEN_COPPER_FLUID = new BlockFluid("molten_copper", FluidInit.MOLTEN_COPPER_FLUID, Material.LAVA);
+	public static final Block MOLTEN_COPPER_BLOCK = new BlockFluid("molten_copper", FluidInit.MOLTEN_COPPER_FLUID, Material.LAVA);
+	
 }

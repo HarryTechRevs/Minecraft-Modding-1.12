@@ -90,6 +90,7 @@ public class RegistryHandler
 		DimensionInit.registerDimensions();
 		EntityInit.registerEntities();
 		RenderHandler.registerEntityRenders();
+		RenderHandler.registerCustomMeshesAndStates();
 		ModConfiguration.registerConfig(event);
 	}
 	

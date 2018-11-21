@@ -27,6 +27,9 @@ tile.copper_planks.name=Copper Planks
 tile.copper_sapling.name=Copper Sapling
 tile.copper_chest.name=Copper Chest
 tile.santa_hat.name=Santa Hat
+tile.copper_door.name=Copper Door
+tile.copper_slab_half.name=Copper Slab
+tile.copper_slab_double.name=Double Copper Slab
 
 //Machines
 tile.sintering_furnace.name=Sinterer

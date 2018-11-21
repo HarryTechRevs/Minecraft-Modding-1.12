@@ -2,7 +2,7 @@ package harry.mods.tutorial.world.generation.generators;
 
 import java.util.Random;
 
-import harry.mods.tutorial.blocks.BlockSaplingBase;
+import harry.mods.tutorial.blocks.trees.BlockSaplingBase;
 import harry.mods.tutorial.init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

@@ -1,6 +1,6 @@
 package harry.mods.tutorial.blocks.tileentities;
 
-import harry.mods.tutorial.blocks.BlockSinteringFurnace;
+import harry.mods.tutorial.blocks.machines.BlockSinteringFurnace;
 import harry.mods.tutorial.blocks.recipes.SinteringFurnaceRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

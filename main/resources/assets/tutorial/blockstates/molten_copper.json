@@ -1,22 +1,9 @@
 {
-    "forge-marker": 1,
+    "forge_marker": 1,
     "variants": {
         "fluid": {
             "model": "forge:fluid",
-            "custom": { "fluid": "tutorial:molten_copper" }
-        },
-        "inventory": {
-            "model": "forge:forge_bucket",
-            "textures": {
-                "model": "forge:items/bucket_base",
-                "fluid": "tutorial:item/bucket_molten_copper",
-                "cover": "forge:item/bucket_cover"
-            },
-            "transform": "forge:default-item",
-            "custom": {
-                "fluid": "tutorial:molten_copper",
-                "flipGas": true
+            "custom": { "fluid": "molten_copper" }
             }
-       }
-    }
+    }        
 }

@@ -1,7 +1,7 @@
 package harry.mods.tutorial.blocks.tileentities;
 
-import harry.mods.tutorial.blocks.BlockElectricSinteringFurnace;
 import harry.mods.tutorial.blocks.energy.CustomEnergyStorage;
+import harry.mods.tutorial.blocks.machines.BlockElectricSinteringFurnace;
 import harry.mods.tutorial.blocks.recipes.SinteringFurnaceRecipes;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
