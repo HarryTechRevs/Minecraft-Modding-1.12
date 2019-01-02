@@ -24,7 +24,7 @@ public class TileEntityGlowstoneGenerator extends TileEntity implements ITickabl
 	public int cookTime;
 	
 	@Override
-	public void update() 
+	public void update()
 	{
 		if(!handler.getStackInSlot(0).isEmpty() && isItemFuel(handler.getStackInSlot(0)))
 		{
@@ -38,19 +38,19 @@ public class TileEntityGlowstoneGenerator extends TileEntity implements ITickabl
 		}
 	}
 	
-	private boolean isItemFuel(ItemStack stack) 
+	private boolean isItemFuel(ItemStack stack)
 	{
 		return getFuelValue(stack) > 0;
 	}
 	
-	private int getFuelValue(ItemStack stack) 
+	private int getFuelValue(ItemStack stack)
 	{
 		if(stack.getItem() == Items.GLOWSTONE_DUST) return 1000;
 		else return 0;
 	}
 
 	@Override
-	public <T> T getCapability(Capability<T> capability, EnumFacing facing) 
+	public <T> T getCapability(Capability<T> capability, EnumFacing facing)
 	{
 		if(capability == CapabilityEnergy.ENERGY) return (T)this.storage;
 		if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return (T)this.handler;
@@ -58,7 +58,7 @@ public class TileEntityGlowstoneGenerator extends TileEntity implements ITickabl
 	}
 	
 	@Override
-	public boolean hasCapability(Capability<?> capability, EnumFacing facing) 
+	public boolean hasCapability(Capability<?> capability, EnumFacing facing)
 	{
 		if(capability == CapabilityEnergy.ENERGY) return true;
 		if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return true;
@@ -66,7 +66,7 @@ public class TileEntityGlowstoneGenerator extends TileEntity implements ITickabl
 	}
 	
 	@Override
-	public NBTTagCompound writeToNBT(NBTTagCompound compound) 
+	public NBTTagCompound writeToNBT(NBTTagCompound compound)
 	{
 		super.writeToNBT(compound);
 		compound.setTag("Inventory", this.handler.serializeNBT());
@@ -78,7 +78,7 @@ public class TileEntityGlowstoneGenerator extends TileEntity implements ITickabl
 	}
 	
 	@Override
-	public void readFromNBT(NBTTagCompound compound) 
+	public void readFromNBT(NBTTagCompound compound)
 	{
 		super.readFromNBT(compound);
 		this.handler.deserializeNBT(compound.getCompoundTag("Inventory"));
@@ -123,15 +123,17 @@ public class TileEntityGlowstoneGenerator extends TileEntity implements ITickabl
 		{
 		case 0:
 			this.energy = value;
+			break;
 		case 1:
 			this.cookTime = value;
+			break;
 		}
 	}
 	
-	public boolean isUsableByPlayer(EntityPlayer player) 
+	public boolean isUsableByPlayer(EntityPlayer player)
 	{
 		return this.world.getTileEntity(this.pos) != this ? false : player.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
-	}	
+	}
 	
 	
 }
